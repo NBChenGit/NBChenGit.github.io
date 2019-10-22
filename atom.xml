@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-22T06:42:30.383Z</updated>
+  <updated>2019-10-22T06:54:01.138Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2019/10/22/test/"/>
+    <id>http://yoursite.com/2019/10/22/test/</id>
+    <published>2019-10-22T06:53:44.000Z</published>
+    <updated>2019-10-22T06:54:01.138Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上周，意大利安全公司 Hacktive Security的研究员 AlessandroGroppo 公开了影响 Joomla 内容管理系统老旧版本 3.0.0 至 3.4.6 （在2012年9月末至2015年12月中旬发布）的0day 详情。该漏洞是一个 PHP 对象注入漏洞，可导致远程代码执行后果。它尚不存在 CVE 编号且易于利用，类似于 CVE-2015-8562。建议使用旧版本的用户更新到安全版本。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Gophish</title>

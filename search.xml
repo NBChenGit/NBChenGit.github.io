@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>test</title>
+    <url>/2019/10/22/test/</url>
+    <content><![CDATA[<p>上周，意大利安全公司 Hacktive Security的研究员 AlessandroGroppo 公开了影响 Joomla 内容管理系统老旧版本 3.0.0 至 3.4.6 （在2012年9月末至2015年12月中旬发布）的0day 详情。该漏洞是一个 PHP 对象注入漏洞，可导致远程代码执行后果。它尚不存在 CVE 编号且易于利用，类似于 CVE-2015-8562。建议使用旧版本的用户更新到安全版本。</p>
+<a id="more"></a>
+
+<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>Joomla是一套内容管理系统，是使用PHP语言加上MySQL数据库所开发的软件系统，最新版本为3.9.11，可以在Linux,Windows,MacOSX等各种不同的平台上执行，在CMS评测中获得”最佳开源CMS”奖！</p>
+<p>漏洞原理：<br>Joomla会话以 PHPObjects 的形式存储在数据库中，并且由 PHP 会话函数处理。但是未认证用户的会话也可以进行存储，因此攻击者通过精心构造的请求包，通过 PHP 对象注入，可以导致未认证的远程代码执行。</p>
+<p>影响范围：<br>Joomla3.0.0 至 3.4.6</p>
+<h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><p>环境搭建：<br>joomla 3.4.6下载：<a href="https://downloads.joomla.org/it/cms/joomla3/3-4-6" target="_blank" rel="noopener">https://downloads.joomla.org/it/cms/joomla3/3-4-6</a></p>
+<p>小坑：当使用phpstudy等集成环境时，php版本不要太高，5.5左右就好，太高的话会报错，</p>
+<p>安装成功后，在后台新建一个页面，如下：<br><img src="1.png" alt="1"></p>
+<p>EXP：<a href="https://www.exploit-db.com/exploits/47465" target="_blank" rel="noopener">https://www.exploit-db.com/exploits/47465</a></p>
+<p>漏洞验证：<br><img src="2.png" alt="2"><br>显示 vulnerable 表示存在漏洞</p>
+<p>漏洞利用：<br><img src="3.png" alt="3"></p>
+<p>执行成功后，会在”configuration.php”文件中写入一句话马</p>
+<p><img src="4.png" alt="4"></p>
+<p>连接密码是：owpoacxuazbzbjmamgauehuctjgfrrfixsmckaixueshegpnra</p>
+<p>此时，可以用 NC 监听或者蚁剑连接<br><img src="5.png" alt="5"></p>
+<h2 id="修复建议"><a href="#修复建议" class="headerlink" title="修复建议"></a>修复建议</h2><p>建议用户到官网下载最新版本的 joomla</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Gophish</title>
     <url>/2019/10/22/Gophish/</url>
     <content><![CDATA[<p><strong>Gophish搭建遇到的坑</strong></p>
