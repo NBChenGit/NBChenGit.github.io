@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-22T06:54:01.138Z</updated>
+  <updated>2019-10-22T10:37:34.889Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,70 +17,22 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2019/10/22/test/"/>
-    <id>http://yoursite.com/2019/10/22/test/</id>
-    <published>2019-10-22T06:53:44.000Z</published>
-    <updated>2019-10-22T06:54:01.138Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;上周，意大利安全公司 Hacktive Security的研究员 AlessandroGroppo 公开了影响 Joomla 内容管理系统老旧版本 3.0.0 至 3.4.6 （在2012年9月末至2015年12月中旬发布）的0day 详情。该漏洞是一个 PHP 对象注入漏洞，可导致远程代码执行后果。它尚不存在 CVE 编号且易于利用，类似于 CVE-2015-8562。建议使用旧版本的用户更新到安全版本。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Gophish</title>
     <link href="http://yoursite.com/2019/10/22/Gophish/"/>
     <id>http://yoursite.com/2019/10/22/Gophish/</id>
     <published>2019-10-22T06:41:56.000Z</published>
-    <updated>2019-10-22T06:42:30.383Z</updated>
+    <updated>2019-10-22T10:37:34.889Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;Gophish搭建遇到的坑&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;前期本地搭建参考自：&lt;br&gt;&lt;a
-        
-      
+      &lt;p&gt;&lt;strong&gt;Gophish搭建遇到的坑&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;前期本地搭建参考自：&lt;br&gt;&lt;a href=&quot;https://bloodzer0.github.io/ossa/infrastructure-security/network-security/office-network-security/gophish/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://bloodzer0.github.io/ossa/infrastructure-security/network-security/office-network-security/gophish/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;出于安全，一般对外开放的机器是不会去对外开放多余的端口。&lt;br&gt;而我们这里就只允许开启了80和443端口，但是对于gophish上的默认配置来说，就需要配置反向代理了。&lt;/p&gt;
     
     </summary>
     
     
       <category term="环境搭建" scheme="http://yoursite.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Gophish</title>
-    <link href="http://yoursite.com/2019/10/15/hello-world/"/>
-    <id>http://yoursite.com/2019/10/15/hello-world/</id>
-    <published>2019-10-15T05:50:13.611Z</published>
-    <updated>2019-10-22T06:38:07.601Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;Gophish搭建遇到的坑&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;前期本地搭建参考自：&lt;br&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="security" scheme="http://yoursite.com/categories/security/"/>
     
     
   </entry>
