@@ -2,6 +2,24 @@
 <search>
   <entry>
     <title>Gophish</title>
+    <url>/2019/10/22/Gophish/</url>
+    <content><![CDATA[<p><strong>Gophish搭建遇到的坑</strong></p>
+<p>前期本地搭建参考自：<br><a href="https://bloodzer0.github.io/ossa/infrastructure-security/network-security/office-network-security/gophish/" target="_blank" rel="noopener">https://bloodzer0.github.io/ossa/infrastructure-security/network-security/office-network-security/gophish/</a></p>
+<p>出于安全，一般对外开放的机器是不会去对外开放多余的端口。<br>而我们这里就只允许开启了80和443端口，但是对于gophish上的默认配置来说，就需要配置反向代理了。<br>但是这里由于本人一开始配环境配到心态爆炸。于是就去请求开个8888让我搞个宝塔来配置。<br>那就先来讲下我们的反向代理咋配吧。<br>简单粗暴的话就上宝塔</p>
+<p><img src="https://xzfile.aliyuncs.com/xzvul/633ca02eccbc4ace8219443703a27eec" alt="image"><br>配置好反代我们本地的gophish默认主页端口3333保存即可。<br>然后按照上面的流程来我们的过程都很流畅</p>
+<p><img src="https://xzfile.aliyuncs.com/xzvul/3126f084eab34517a64180623cd85bfc" alt="image"><br>访问登录，完成。但是当你用默认密码登录的时候呢却出现了<br><strong>Forbidden - CSRF token invalid</strong><br>这就烦人的地方了。作为一个web狗来说，csrf token错误？看了下主页中的确有csrftoken这个参数，并且随表单提交</p>
+<p><img src="https://xzfile.aliyuncs.com/xzvul/3721b656c78d471fb4f4b9ec6766d633" alt="image"><br>尝试手动抓包改下。还是一样，然后再者就以为是什么refer头。搞了半天查了半天也没有人遇到过这些问题。<br>直到后来，重启下gophish的时候发现他的主页是https请求的。而我的确是http会不会有关系呢？<br>管他呢，配个https又不会死<br>于是再简单粗暴的上宝塔来个一键配</p>
+<p><img src="https://xzfile.aliyuncs.com/xzvul/4091030597604374ac072c949c14f328" alt="image"><br>配置完后尝试访问<br><strong>对了一开始上面的反代配置映射3333端口也要改为https的</strong><br>果然终于可以了。。</p>
+<p><img src="https://xzfile.aliyuncs.com/xzvul/0ed3e5c1ecdd4a1e857f584c17410df0" alt="image"><br>功夫不负乱搭人。不过通过踩这个坑。我当时一开始的处理就是不断的查看配置哪里有什么问题，也帮助了我对nginx的一些配置有了些了解<br>虽然说用宝塔的，但是自己也手动配置了N次。最终竟然是该死的https导致的。</p>
+<p>过程中还有一些坑。就是刷新时没清缓存，明明已经生效了，但是一直请求原本没生效的缓存，所以有时搭环境系统啥的，配置完新的清下缓存再试试。</p>
+<p>Over,第一篇博客。水一下。</p>
+]]></content>
+      <categories>
+        <category>环境搭建</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Gophish</title>
     <url>/2019/10/15/hello-world/</url>
     <content><![CDATA[<p><strong>Gophish搭建遇到的坑</strong></p>
 <p>前期本地搭建参考自：<br><a href="https://bloodzer0.github.io/ossa/infrastructure-security/network-security/office-network-security/gophish/" target="_blank" rel="noopener">https://bloodzer0.github.io/ossa/infrastructure-security/network-security/office-network-security/gophish/</a></p>
