@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-22T10:37:34.889Z</updated>
+  <updated>2019-10-24T02:42:45.141Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cve-2019-11043</title>
+    <link href="http://yoursite.com/2019/10/24/cve-2019-11043/"/>
+    <id>http://yoursite.com/2019/10/24/cve-2019-11043/</id>
+    <published>2019-10-24T01:08:31.000Z</published>
+    <updated>2019-10-24T02:42:45.141Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;###环境搭建：&lt;br&gt;系统环境 装有docker环境的centos 7&lt;br&gt;然后从&lt;br&gt;github上&lt;a href=&quot;https://github.com/vulhub/vulhub/tree/master/php/CVE-2019-11043&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/vulhub/vulhub/tree/master/php/CVE-2019-11043&lt;/a&gt;&lt;br&gt;按照他这个目录格式把文件建好。&lt;/p&gt;
+&lt;p&gt;然后就在目录下 docker-compose up&lt;br&gt;这里可能会很慢，下载镜像解决方案见下面这个：亲测有效&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/qq_33925869/article/details/90767748&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/qq_33925869/article/details/90767748&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="web安全" scheme="http://yoursite.com/categories/web%E5%AE%89%E5%85%A8/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Gophish</title>
