@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-06T01:51:58.031Z</updated>
+  <updated>2019-11-08T08:45:56.707Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>shiro反序列化复现</title>
+    <link href="http://yoursite.com/2019/11/08/shiro%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%A4%8D%E7%8E%B0/"/>
+    <id>http://yoursite.com/2019/11/08/shiro反序列化复现/</id>
+    <published>2019-11-08T08:41:57.000Z</published>
+    <updated>2019-11-08T08:45:56.707Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Shiro反序列化复现&quot;&gt;&lt;a href=&quot;#Shiro反序列化复现&quot; class=&quot;headerlink&quot; title=&quot;Shiro反序列化复现&quot;&gt;&lt;/a&gt;Shiro反序列化复现&lt;/h1&gt;&lt;h3 id=&quot;环境搭建：&quot;&gt;&lt;a href=&quot;#环境搭建：&quot; class=&quot;headerlink&quot; title=&quot;环境搭建：&quot;&gt;&lt;/a&gt;环境搭建：&lt;/h3&gt;&lt;p&gt;拉取镜像: docker pull medicean/vulapps:s_shiro_1&lt;/p&gt;
+&lt;p&gt;启动环境: docker run -d -p 8081:8080 medicean/vulapps:s_shiro_1&lt;/p&gt;
+&lt;p&gt;攻击者IP：182.xx.xx.xx&lt;/p&gt;
+&lt;p&gt;靶机IP：172.22.145.76&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="漏洞复现" scheme="http://yoursite.com/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>SRC之jsonp挖掘</title>
     <link href="http://yoursite.com/2019/11/06/SRC%E4%B9%8Bjsonp%E6%8C%96%E6%8E%98/"/>
     <id>http://yoursite.com/2019/11/06/SRC之jsonp挖掘/</id>
     <published>2019-11-06T09:08:44.000Z</published>
-    <updated>2019-11-06T01:51:58.031Z</updated>
+    <updated>2019-11-08T08:42:08.843Z</updated>
     
     <summary type="html">
     
@@ -33,7 +55,7 @@
     </summary>
     
     
-      <category term="Web安全" scheme="http://yoursite.com/categories/Web%E5%AE%89%E5%85%A8/"/>
+      <category term="SRC" scheme="http://yoursite.com/categories/SRC/"/>
     
     
       <category term="web" scheme="http://yoursite.com/tags/web/"/>
