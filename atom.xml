@@ -130,7 +130,7 @@
     <link href="http://yoursite.com/2019/10/24/cve-2019-11043/"/>
     <id>http://yoursite.com/2019/10/24/cve-2019-11043/</id>
     <published>2019-10-24T01:08:31.000Z</published>
-    <updated>2020-01-09T03:24:37.764Z</updated>
+    <updated>2020-12-07T15:20:42.038Z</updated>
     
     <summary type="html">
     
@@ -140,7 +140,7 @@
     </summary>
     
     
-      <category term="Web" scheme="http://yoursite.com/categories/Web/"/>
+      <category term="web" scheme="http://yoursite.com/categories/web/"/>
     
     
       <category term="web学习" scheme="http://yoursite.com/tags/web%E5%AD%A6%E4%B9%A0/"/>
